@@ -9,6 +9,35 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
+    <div id="menu" class="menu hidden">
+        <div class="menu-items">
+            <button class="menu-items__option menu-items__option--active">
+                <span>Acesso Rápido</span>
+                <i class="fa-solid fa-minus"></i>
+            </button>
+                <ul class="menu-items__option-list">
+                    <li class="menu-items__option-list-item">Localizar Agência</li>
+                    <li class="menu-items__option-list-item">Fale Conosco</li>
+                    <li class="menu-items__option-list-item">Política de Privacidade</li>
+                    <li class="menu-items__option-list-item">2º via de boleto</li>
+                    <li class="menu-items__option-list-item">Atendimento</li>
+                    <li class="menu-items__option-list-item">Trabalhe Conosco</li>
+                </ul>
+            <button class="menu-items__option">
+                <span>Para Você</span> 
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="menu-items__option">
+                <span>Para sua Empresa</span> 
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+        <div class="menu-close-container">
+            <button id="menuClose" class="menu-close-container__button">
+                <i class="fa-solid fa-xmark menu-close-container__icon"></i>
+            </button>
+        </div>
+    </div>
     <header class="header">
         <div class="access-account">
             <label for="cnpj" class="access-account__label">  Acessar sua conta com  </label>
@@ -29,16 +58,22 @@
          
 
             <div class="header-actions__action-icons">
-                <div class="header-actions__search">
+                <button class="header-actions__search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="header-actions__toggle-menu">
+                </button>
+                <button id="toggleMenu" class="header-actions__toggle-menu">
                     <i class="fa-solid fa-bars"></i>
-                </div>
+                </button>
             </div>
 
         </div>
     </header>
+
+    <div class="main-content">
+      
+       <h1>ola</h1>
+
+    </div>
 	<script src="scripts/index.js"></script>
   </body>
 </html>

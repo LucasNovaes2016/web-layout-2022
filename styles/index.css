@@ -9,7 +9,75 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    overflow: auto;
+    z-index: 1;
+    background: #44a613;
+    display: flex;
+}
+
+.menu-items {
+    padding: 40px 60px;
+    flex-grow: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items__option {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px 36px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-top: 1px solid #9d9d9d;
+    border-right: none;
+    border-bottom: none;
+    border-left:  none;
+    background: none;
+}
+
+.menu-items__option--active {
+    border: none;
+    background: #3b8e11;
+}
+
+.menu-items__option-list {
+    list-style-type: none;
+}
+
+.menu-items__option-list-item {
+    list-style-type: none;
+    padding: 20px 36px;
+    font-size: 0.9rem;
+}
+
+.menu-close-container {
+    padding: 15px 10px;
+}
+
+.menu-close-container__button {
+    background: none;
+    border: none;
+}
+
+.menu-close-container__icon {
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #364236
+}
+
 .header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 90px;
     border-top: 1px #9d9d9d;
     display: flex;
     flex-direction: column;
@@ -19,8 +87,9 @@ body {
 .access-account {
     order: 2;
     display: flex;
-    padding: 4px 8px;
     justify-content: end;
+    align-items: center;
+    padding: 4px 8px;
     margin-right: 0px;
 }
 
@@ -79,6 +148,7 @@ body {
     padding: 14px 16px;
     color: #fff;
     cursor: pointer;
+    border: none;
 }
 
 .header-actions__toggle-menu {
@@ -86,11 +156,31 @@ body {
     padding: 14px 16px;
     color: #fff;
     cursor: pointer;
+    border: none;
+}
+
+.main-content {
+    background: #fbfbfb;
+    margin-top: 90px;
+}
+
+.hidden {
+    display: none;
 }
 
 
 @media only screen and (min-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 48vw;
+        overflow: auto;
+        z-index: 1;
+    }
+    
     .header {
+        height: 47px;
         flex-direction: row;
         justify-content: end;
         align-items: center;;
@@ -105,5 +195,9 @@ body {
     .header-actions {
         order: 2;
         justify-content: start;
+    }
+
+    .main-content {
+        margin-top: 47px;
     }
   }
