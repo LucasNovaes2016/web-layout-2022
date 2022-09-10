@@ -9,7 +9,36 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="header">
+        <div class="access-account">
+            <label for="cnpj" class="access-account__label">  Acessar sua conta com  </label>
+            <i class="fa-solid fa-caret-down access-account__caret-down"></i>
+          
+                <input type="text" name="cnpj" placeholder="CNPJ" class="access-account__input"> 
+       
+            
+            <i class="fa-solid fa-arrow-right access-account__arrow-right"></i>
+
+        </div>
+
+
+        <div class="header-actions">
+            
+        
+                <button class="header-actions__open-account-button">Abra sua conta</button>
+         
+
+            <div class="header-actions__action-icons">
+                <div class="header-actions__search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="header-actions__toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
 	<script src="scripts/index.js"></script>
   </body>
 </html>
