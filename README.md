@@ -1,2 +1,5 @@
 # web-layout-2022
-Web Layout tests
+
+### Executar a aplicação
+
+Abra o arquivo "index.html" em seu browser
