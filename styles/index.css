@@ -60,6 +60,11 @@ body {
     font-size: 0.9rem;
 }
 
+.menu-items__option-list-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .menu-close-container {
     padding: 15px 10px;
 }
@@ -116,6 +121,11 @@ body {
 
 .access-account__input::placeholder {
     color: #C0C0C0; 
+}
+
+.access-account__submit-button {
+    background: none;
+    border: none;
 }
 
 .access-account__arrow-right {
@@ -237,6 +247,11 @@ body {
 .extra-info__list-item {
     color: #9d9d9d;
     padding-bottom: 4px;
+}
+
+.extra-info__list-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .extra-info__list-item-badge {

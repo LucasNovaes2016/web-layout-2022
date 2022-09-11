@@ -16,29 +16,59 @@
             <i class="fa-solid fa-minus"></i>
             </button>
             <ul class="menu-items__option-list">
-               <li class="menu-items__option-list-item">Localizar Agência</li>
-               <li class="menu-items__option-list-item">Fale Conosco</li>
-               <li class="menu-items__option-list-item">Política de Privacidade</li>
-               <li class="menu-items__option-list-item">2º via de boleto</li>
-               <li class="menu-items__option-list-item">Atendimento</li>
-               <li class="menu-items__option-list-item">Trabalhe Conosco</li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">Localizar Agência</a>
+               </li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">Fale Conosco</a>
+               </li>
+               <li class="menu-items__option-list-item"> <a href="#" class="menu-items__option-list-link">Política de Privacidade</a></li>
+               <li class="menu-items__option-list-item"><a href="#" class="menu-items__option-list-link">2º via de boleto</a></li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">     Atendimento</a>
+               </li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">
+                  Trabalhe Conosco
+                  </a>
+               </li>
             </ul>
             <button class="menu-items__option">
             <span>Para Você</span> 
             <i class="fa-solid fa-plus"></i>
             </button>
             <ul class="menu-items__option-list hidden">
-               <li class="menu-items__option-list-item">Controle de Gastos</li>
-               <li class="menu-items__option-list-item">Educação Financeira</li>
-               <li class="menu-items__option-list-item">Financiamentos</li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">
+                  Controle de Gastos
+                  </a>
+               </li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">
+                  Educação Financeira
+                  </a>
+               </li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">
+                  Financiamentos
+                  </a>
+               </li>
             </ul>
             <button class="menu-items__option">
             <span>Para sua Empresa</span> 
             <i class="fa-solid fa-plus"></i>
             </button>
             <ul class="menu-items__option-list hidden">
-               <li class="menu-items__option-list-item">Preços</li>
-               <li class="menu-items__option-list-item">Marcar Encontro</li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">
+                  Preços
+                  </a>
+               </li>
+               <li class="menu-items__option-list-item">
+                  <a href="#" class="menu-items__option-list-link">
+                  Marcar Encontro
+                  </a>
+               </li>
             </ul>
          </div>
          <div class="menu-close-container">
@@ -49,10 +79,14 @@
       </div>
       <header class="header">
          <div class="access-account">
-            <label for="cnpj" class="access-account__label">  Acessar sua conta com  </label>
-            <i class="fa-solid fa-caret-down access-account__caret-down"></i>
-            <input type="text" name="cnpj" placeholder="CNPJ" class="access-account__input"> 
-            <i class="fa-solid fa-arrow-right access-account__arrow-right"></i>
+            <form>
+               <label for="cnpj" class="access-account__label">  Acessar sua conta com  </label>
+               <i class="fa-solid fa-caret-down access-account__caret-down"></i>
+               <input id="cnpj" type="text" name="cnpj" placeholder="CNPJ" class="access-account__input"> 
+               <button class="access-account__submit-button" type="submit">
+                  <i class="fa-solid fa-arrow-right access-account__arrow-right"></i>
+               </button>
+            </form>
          </div>
          <div class="header-actions">
             <button class="header-actions__open-account-button">Abra sua conta</button>
@@ -77,19 +111,71 @@
                <div class="extra-info__container">
                   <h2 class="extra-info__header">Para Você</h2>
                   <ul class="extra-info__list">
-                     <li class="extra-info__list-item">Conta Corrente</li>
-                     <li class="extra-info__list-item">Cartões</li>
-                     <li class="extra-info__list-item"><span class="extra-info__list-item-badge">Novo</span> Pix</li>
-                     <li class="extra-info__list-item">Cosnsórcios</li>
-                     <li class="extra-info__list-item">Crédito</li>
-                     <li class="extra-info__list-item">Investimentos</li>
-                     <li class="extra-info__list-item">Pagamentos</li>
-                     <li class="extra-info__list-item">Previdência</li>
-                     <li class="extra-info__list-item">Máquina de Cartões</li>
-                     <li class="extra-info__list-item">Seguros</li>
-                     <li class="extra-info__list-item">Câmbio</li>
-                     <li class="extra-info__list-item">Certificado Digital</li>
-                     <li class="extra-info__list-item">Momentos</li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Conta Corrente
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Cartões
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item"><span class="extra-info__list-item-badge">
+                        <a href="#" class="extra-info__list-link">
+                        Novo</span> Pix
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Cosnsórcios
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Crédito
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Investimentos
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Pagamentos
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Previdência
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Máquina de Cartões
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Seguros
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Câmbio
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Certificado Digital
+                        </a>
+                     </li>
+                     <li class="extra-info__list-item">
+                        <a href="#" class="extra-info__list-link">
+                        Momentos
+                        </a>
+                     </li>
                   </ul>
                </div>
             </div>
